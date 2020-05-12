@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.ebookfrenzy.restaurantpos.MainActivity" />
+    </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/kidsmenu"
+            tools:context=".MainActivity"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeFromCombos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.homeFromKidsMeals()}'
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/kidschz"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Kids Chzbgr Meal", "$4.19")}'
+                android:text="Kids Chzbgr Meal" />
+
+            <Button
+                android:id="@+id/kidsbrg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Kids Bgr Meal", "$4.19")}'
+                android:text="Kids Bgr Meal" />
+
+            <Button
+                android:id="@+id/kidsgril"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Kids Grilled Chz Meal", "$4.19")}'
+                android:text="Kids Grilled Chz Meal" />
+
+            <Button
+                android:id="@+id/kidscorn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Kids Corn Dog Meal", "$4.19")}'
+                android:text="Kids Corn Dog Meal" />
+        </LinearLayout>
+</layout>

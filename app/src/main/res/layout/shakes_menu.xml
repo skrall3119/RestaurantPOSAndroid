@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.ebookfrenzy.restaurantpos.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shakesmenu"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/homeFromSides"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.homeFromShakes()}'
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/tot"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Vanilla Shake", "$4.56")}'
+                android:text="Vanilla" />
+
+            <Button
+                android:id="@+id/chztot"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Chocolate Shake", "$4.56")}'
+                android:text="Chocolate" />
+
+            <Button
+                android:id="@+id/chilichztot"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Strawberry Shake", "$4.56")}'
+                android:text="Strawberry" />
+
+            <Button
+                android:id="@+id/mozz"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Caramel Shake", "$4.56")}'
+                android:text="Caramel" />
+
+            <Button
+                android:id="@+id/rings"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Peanut Butter Shake", "$4.56")}'
+                android:text="Peanut Butter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/fry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Oreo Cheesecake Shake", "$4.56")}'
+                android:text="Oreo Cheesecake" />
+
+            <Button
+                android:id="@+id/chzfry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Strawberry Cheesecake", "$4.56")}'
+                android:text="Strawberry Cheesecake" />
+
+            <Button
+                android:id="@+id/chilichzfry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Cheesecake Shake", "$4.56")}'
+                android:text="Cheesecake" />
+
+            <Button
+                android:id="@+id/bites"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Oreo Chocolate Shake", "$4.56")}'
+                android:text="Oreo Chocolate" />
+
+            <Button
+                android:id="@+id/peppers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Oreo Peanutbutter Shake", "$4.56")}'
+                android:text="Oreo PeanutButter" />
+
+            <Button
+                android:id="@+id/popcorn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("Oreo Caramel Shake", "$4.56")}'
+                android:text="Oreo Caramel" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

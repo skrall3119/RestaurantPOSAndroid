@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.ebookfrenzy.restaurantpos.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/combomenu"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeFromCombos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.homeFromCombos()}'
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/combo1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#1 Combo", "$7.75")}'
+                android:text="Works Chz" />
+
+            <Button
+                android:id="@+id/combo2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#2 Combo", "$8.65")}'
+                android:text="SS Works" />
+
+            <Button
+                android:id="@+id/combo3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#3 Combo", "$9.86")}'
+                android:text="SS Bacon" />
+
+            <Button
+                android:id="@+id/combo4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#4 Combo", "$8.64")}'
+                android:text="Bacon chz toaster" />
+
+            <Button
+                android:id="@+id/combo5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#5 Combo", "$7.75")}'
+                android:text="Philly" />
+
+            <Button
+                android:id="@+id/combo6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#6 Combo", "$5.65")}'
+                android:text="6in Dog" />
+
+            <Button
+                android:id="@+id/combo7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#7 Combo", "$6.99")}'
+                android:text="Footlong" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/combo8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#8 Combo", "$6.89")}'
+                android:text="Popcorn" />
+
+            <Button
+                android:id="@+id/combo9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#9 Combo", "$7.89")}'
+                android:text="Grilled" />
+
+            <Button
+                android:id="@+id/combo10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#10 Combo", "$7.89")}'
+                android:text="Crispy" />
+
+            <Button
+                android:id="@+id/combo11"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#11 Combo", "$8.99")}'
+                android:text="Chicken Dinner" />
+
+            <Button
+                android:id="@+id/combo12"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#12 Combo", "$7.89")}'
+                android:text="Sauced popcorn" />
+
+            <Button
+                android:id="@+id/combo14"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:onClick='@{() -> main.addItem("#14 Combo", "$5.89")}'
+                android:layout_weight="1"
+                android:text="Breakfast Burrito" />
+
+            <Button
+                android:id="@+id/combo15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick='@{() -> main.addItem("#15 Combo", "$6.69")}'
+                android:text="Premium Burrito" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
